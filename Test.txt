@@ -1,1 +1,3 @@
 Hi This is my first statement to the computer to learn Git
+
+This is my second commit in Dev Branch 
