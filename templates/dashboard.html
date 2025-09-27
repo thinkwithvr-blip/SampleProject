@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard - Login System{% endblock %}
+
+{% block content %}
+<div class="card">
+    <div class="card-body p-5">
+        <div class="text-center mb-4">
+            <h2 class="fw-bold text-primary">Dashboard</h2>
+            <p class="text-muted">Welcome, {{ username }}!</p>
+        </div>
+        
+        <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading">Login Successful!</h4>
+            <p>You have successfully logged into your account.</p>
+            <hr>
+            <p class="mb-0">This is a protected area that only authenticated users can access.</p>
+        </div>
+        
+        <div class="d-grid">
+            <a href="{{ url_for('logout') }}" class="btn btn-outline-danger">Logout</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
